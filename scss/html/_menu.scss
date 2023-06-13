@@ -1,0 +1,33 @@
+@import "extra/mixin";
+
+/*Menu*/
+.contenedor{
+    background-color: $color-fondo;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .tazaCafe, .tazaTe{
+        display: none;
+    }
+    .jugoNaranja{
+        @include productos(300px, 300px);
+    }
+    .scones{
+        @include productos(300px, 300px);
+    }
+    .tostados{
+        @include productos(300px, 300px);
+    }
+    .tazaTe{
+        @include productos(300px, 300px);
+    }
+    .tazaCafe{
+        @include productos(300px, 300px);
+    }
+    #te{
+        @include productos(300px, 300px);
+    }
+}
+
+

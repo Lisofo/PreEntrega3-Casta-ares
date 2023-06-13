@@ -1,0 +1,147 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+/* css general y main */
+#logo {
+  width: 231px;
+  height: 186px;
+  vertical-align: middle;
+  margin-left: 75px; }
+
+#texto1 {
+  color: white; }
+
+#front {
+  width: 400px;
+  height: 300px;
+  opacity: 0.9;
+  object-position: center; }
+
+body {
+  background-repeat: no-repeat;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover; }
+
+header h1 {
+  color: #3a1500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 50px;
+  text-align: center; }
+
+header h2 {
+  color: #3a1500;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center; }
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: rgba(248, 200, 129, 0.514);
+  color: black; }
+  header nav ul li {
+    display: inline;
+    margin: 20px;
+    font-size: 22px; }
+    header nav ul li a {
+      color: black;
+      text-decoration: none; }
+
+footer {
+  background-color: rgba(248, 200, 129, 0.514); }
+  footer h3 {
+    font-size: 22px;
+    text-align: center; }
+
+/* mq para pc */
+@media screen and (min-width: 1024px) {
+  .contenedor .libro2, .contenedor .libro4, .contenedor .tazaTe {
+    display: block; }
+  .contenedor .tazaCafe {
+    display: block; } }
+
+/*HTML libreria*/
+.contenedor {
+  height: 70vh;
+  background-color: rgba(248, 200, 129, 0.514);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 33%);
+  row-gap: 1rem;
+  margin: 1rem;
+  padding: 2rem; }
+  .contenedor .libro1 {
+    width: 200px;
+    height: 200px; }
+  .contenedor .libro2 {
+    width: 200px;
+    height: 200px; }
+  .contenedor .libro3 {
+    width: 200px;
+    height: 200px; }
+  .contenedor .libro4 {
+    width: 200px;
+    height: 200px; }
+  .contenedor .libro5 {
+    width: 200px;
+    height: 200px; }
+  .contenedor .libro2, .contenedor .libro4 {
+    display: none; }
+  .contenedor div img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center; }
+
+/* mq para pc */
+@media screen and (min-width: 1024px) {
+  .contenedor .libro2, .contenedor .libro4, .contenedor .tazaTe {
+    display: block; }
+  .contenedor .tazaCafe {
+    display: block; } }
+
+/*Menu*/
+.contenedor {
+  background-color: rgba(248, 200, 129, 0.514);
+  height: 800px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .contenedor .tazaCafe, .contenedor .tazaTe {
+    display: none; }
+  .contenedor .jugoNaranja {
+    width: 300px;
+    height: 300px; }
+  .contenedor .scones {
+    width: 300px;
+    height: 300px; }
+  .contenedor .tostados {
+    width: 300px;
+    height: 300px; }
+  .contenedor .tazaTe {
+    width: 300px;
+    height: 300px; }
+  .contenedor .tazaCafe {
+    width: 300px;
+    height: 300px; }
+  .contenedor #te {
+    width: 300px;
+    height: 300px; }
+
+/*Contacto*/
+section {
+  background-color: #5a3312; }
+  section h2 form {
+    text-align: center; }
+
+/*aboutUs*/
+#hermanos {
+  width: 450px;
+  height: 270px; }
+
+.hermanos-foto {
+  text-align: center; }

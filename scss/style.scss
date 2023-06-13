@@ -1,0 +1,80 @@
+@import "extra/vars";
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-principal;
+}
+/* css general y main */
+#logo{
+    width: 231px;
+    height: 186px;
+    vertical-align: middle;
+    margin-left: 75px;
+}
+#texto1{
+    color: white;
+}
+
+
+#front{
+    width: 400px;
+    height: 300px;
+    opacity: 0.9;
+    object-position: center;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+
+header{
+    h1{
+        color: rgb(58, 21, 0);
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        color: rgb(58, 21, 0);
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+    }
+    nav{
+        ul{
+            list-style: none;
+            text-align: center;
+            background-color: $color-fondo;
+            color: black;
+            li{
+                display: inline;
+                margin: 20px;
+                font-size: 22px;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: $color-fondo;
+    h3{
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@import"extra/mediaq";
+
+@import"html/libreria";
+@import"html/menu";
+@import"html/contacto";
+@import"html/nosotros";

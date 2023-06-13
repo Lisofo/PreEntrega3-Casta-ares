@@ -1,0 +1,42 @@
+@import "extra/mixin";
+
+/*HTML libreria*/
+
+.contenedor{
+    height: 70vh;
+    background-color: $color-fondo;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    .libro1{
+        @include productos(200px, 200px);
+    }
+    .libro2{
+        @include productos(200px, 200px);
+    }
+    .libro3{
+        @include productos(200px, 200px);
+    }
+    .libro4{
+        @include productos(200px, 200px);
+    }
+    .libro5{
+        @include productos(200px, 200px);
+    }
+    .libro2, .libro4{
+        display: none;
+    }
+    div{
+        img{
+            width: 80%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+}
+
+@import"../extra/mediaq";

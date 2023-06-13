@@ -1,0 +1,6 @@
+//mixin
+
+@mixin productos($width, $height){
+    width : $width;
+    height: $height;
+}
